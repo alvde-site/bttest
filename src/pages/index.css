@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/actor.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
+
+/*header начало */
+@import url(../blocks/header/header.css);
+/*header конец */
+
+/* main начало */
+@import url(../blocks/main/main.css);
+/* main начало */
+
+/*footer начало */
+@import url(../blocks/footer/footer.css);
+/*footer конец */

@@ -1,0 +1,265 @@
+.header {
+  box-sizing: border-box;
+  min-height: 230px;
+  background-color: #adadad;
+  padding: 40px 200px 0;
+  position: relative;
+}
+
+.header__menu {
+  box-sizing: border-box;
+  background-color: #ffc600;
+  min-height: 80px;
+  border-radius: 52px;
+}
+
+.header__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__decorate {
+  background-color: #e7e7e6;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.menu__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.menu__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.menu__item {
+  display: flex;
+  position: relative;
+}
+
+.menu__button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff url(../../images/svg/burger.svg) center / 40px no-repeat;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  display: none;
+}
+
+.menu__button:hover {
+  opacity: 0.5;
+}
+
+.logo__link {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__item {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav__item:hover {
+  opacity: 0.5;
+}
+
+.nav__item:not(:last-child) {
+  padding: 0 15px;
+}
+
+.nav__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-family: "Actor", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.search--size-lg {
+  display: none;
+}
+
+.search__label--size-xxl {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+.search__label--size-lg {
+  display: inline-block;
+  height: 62px;
+  width: 100%;
+  position: relative;
+  right: 0;
+}
+
+.search__label--size-xxl:focus-within {
+  width: clamp(40vw, 60vw, 1100px);
+  position: absolute;
+  right: 0;
+}
+
+.search__label--size-xxl::before {
+  content: "";
+  background: url(../../images/svg/search.svg) center / contain no-repeat;
+  display: none;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.search__label--size-lg::before {
+  content: "";
+  background: url(../../images/svg/search.svg) center / contain no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.search__label--size-xxl:focus-within::before {
+  display: inline-block;
+}
+
+.search__input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  color: transparent;
+  font-family: "Actor", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+}
+
+.search__input--size-xxl {
+  background: url(../../images/svg/search.svg) center / 40px no-repeat;
+}
+
+.search__input--size-xxl:focus {
+  padding: 0 0 0 30px;
+  background: #e7e7e6;
+  outline: none;
+  border: 10px solid #fff;
+  color: #000;
+}
+
+.search__input--size-xxl:focus::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search__input--size-xxl::placeholder {
+  color: transparent;
+}
+
+.search__input--size-lg {
+  padding: 0 0 0 30px;
+  background: #e7e7e6;
+  outline: none;
+  border: 10px solid #fff;
+  color: #000;
+}
+
+@media (max-width: 1400px) {
+  .menu__nav--size-xxl {
+    display: none;
+  }
+
+  .menu__button--size-xxl {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 40px 50px 0;
+    min-height: 345px;
+  }
+
+  .header__menu {
+    border-radius: 25px;
+  }
+
+  .header__decorate {
+    height: 50px;
+  }
+
+  .menu {
+    padding: 10px;
+  }
+
+  .menu__logo,
+  .menu__button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .search--size-xxl {
+    display: none;
+  }
+
+  .search--size-lg {
+    display: block;
+    padding: 10px 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 40px 20px 0;
+  }
+}
