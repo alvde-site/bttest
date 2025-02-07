@@ -10,6 +10,9 @@ const footer = fs.readFileSync(__dirname + "/src/templates/footer.html");
 const main = fs.readFileSync(__dirname + "/src/templates/main.html");
 const form = fs.readFileSync(__dirname + "/src/templates/form.html");
 
+let host = "https://bttest-3no2.onrender.com";
+// host = null;
+
 module.exports = {
   entry: { main: "./src/pages/index.js" },
   output: {
@@ -38,11 +41,22 @@ module.exports = {
       },
       {
         // регулярное выражение, которое ищет все файлы с такими расширениями
-        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+        test: /\.(png|svg|jpg|gif|eot|ttf|otf)$/,
         type: "asset/resource",
         generator: {
-          publicPath: "http://localhost:8080/images/",
+          publicPath: host
+            ? `${host}/images/`
+            : "http://localhost:8080/images/",
           outputPath: "images/",
+        },
+      },
+      {
+        // регулярное выражение, которое ищет все файлы с такими расширениями
+        test: /\.(woff(2)?)$/,
+        type: "asset/resource",
+        generator: {
+          publicPath: host ? `${host}/fonts/` : "http://localhost:8080/fonts/",
+          outputPath: "fonts/",
         },
       },
       {

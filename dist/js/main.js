@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector(".menu__button"),t=document.querySelector(".nav__close-button"),n=document.querySelector(".menu__nav");e.addEventListener("click",(function(){n.style.width="100%",console.log("open")})),t.addEventListener("click",(function(){n.style.width="0",console.log("close")}))})();

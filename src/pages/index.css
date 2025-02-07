@@ -14,3 +14,6 @@
 /*footer начало */
 @import url(../blocks/footer/footer.css);
 /*footer конец */
+
+/* logo */
+@import url(../blocks/logo/logo.css);
