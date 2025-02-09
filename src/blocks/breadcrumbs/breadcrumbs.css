@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  position: relative;
+  font-size: 32px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "»";
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.breadcrumbs li:last-child .breadcrumbs__item {
+  color: #fdc70d;
+}
+
+@media (max-width: 1200px) {
+  .breadcrumbs {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breadcrumbs {
+    font-size: 18px;
+  }
+}

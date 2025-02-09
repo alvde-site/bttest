@@ -62,7 +62,56 @@
 
       <!-- Начало блока content -->
 
-      <main class="main"><div class="page__block">Основной контент</div></main>
+      <main class="main">
+  <div class="page__block news">
+    <ul class="news__breadcrumbs breadcrumbs">
+      <li><a href="#!" class="breadcrumbs__item">Главная</a></li>
+      <li><a href="#!" class="breadcrumbs__item">Новости</a></li>
+    </ul>
+    <div class="news__filter filter">
+      <div class="filter__wrap">
+        <ul class="filter__list">
+          <li><button class="filter__button">Новости</button></li>
+          <li><button class="filter__button">Видео</button></li>
+          <li><button class="filter__button">СМИ</button></li>
+        </ul>
+      </div>
+      <div class="filter__wrap">
+        <ul class="filter__list">
+          <li><button class="filter__button">2024</button></li>
+          <li><button class="filter__button">2023</button></li>
+          <li><button class="filter__button">2022</button></li>
+          <li><button class="filter__button">2021</button></li>
+        </ul>
+        <button class="filter__archive">Архив новостей</button>
+      </div>
+    </div>
+    <h2 class="news__title">Новости</h2>
+    <ul class="news__cards"></ul>
+    <ul class="news__pagination pagination">
+      <li>
+        <a href="#!" class="pagination__button">←</a>
+      </li>
+      <li><a href="#!" class="pagination__button">01</a></li>
+      <li><a href="#!" class="pagination__button">02</a></li>
+      <li><a href="#!" class="pagination__button">03</a></li>
+      <li><a href="#!" class="pagination__button">04</a></li>
+      <li><a href="#!" class="pagination__button">05</a></li>
+      <li>
+        <a href="#!" class="pagination__button">→</a>
+      </li>
+    </ul>
+  </div>
+  <template id="newscard-template">
+    <li class="news__card newscard">
+      <div class="newscard__desc">
+        <p class="newscard__date"></p>
+        <p class="newscard__text"></p>
+      </div>
+      <img src="" alt="" class="newscard__image" />
+    </li>
+  </template>
+</main>
 
 
       <!-- Конец блока content -->

@@ -17,3 +17,5 @@
 
 /* logo */
 @import url(../blocks/logo/logo.css);
+/* breadcrumbs */
+@import url(../blocks/breadcrumbs/breadcrumbs.css);
