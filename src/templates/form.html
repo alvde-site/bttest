@@ -1,1 +1,67 @@
-<main class="main"><div class="page__block">Форм page content</div></main>
+<main class="main">
+  <div class="page__block feedback">
+    <ul class="news__breadcrumbs breadcrumbs">
+      <li><a href="/" class="breadcrumbs__item">Главная</a></li>
+      <li>
+        <a href="#!" class="breadcrumbs__item">Обращения граждан</a>
+      </li>
+    </ul>
+    <form class="feedback__form form">
+      <input
+        type="text"
+        id="name"
+        class="form__input form__input--type-text"
+        name="name"
+        placeholder="ФИО"
+        minlength="2"
+        maxlength="50"
+        required
+      />
+      <input
+        type="email"
+        id="email"
+        class="form__input form__input--type-email"
+        name="email"
+        placeholder="E-mail"
+        required
+      />
+      <input
+        type="text"
+        id="tel"
+        class="form__input form__input--type-tel"
+        name="tel"
+        placeholder="+79998887766"
+        pattern="\+7[0-9]{10}"
+        required
+      />
+      <textarea
+        placeholder="Введите текст вашего обращения..."
+        class="form__input form__input-textarea"
+        name="message"
+      ></textarea>
+      <div class="form__fieldset form__fieldset--type-file files">
+        <label for="file" class="form__input-file">Прикрепить файлы</label>
+        <input type="file" id="file" multiple hidden />
+      </div>
+      <div class="form__fieldset form__fieldset--type-checkbox checkbox">
+        <div class="checkbox__wrap">
+          <input
+            id="policy"
+            type="checkbox"
+            class="checkbox__input"
+            hidden
+            required
+          />
+          <label for="policy" class="checkbox__label"></label>
+        </div>
+        <span class="checkbox__text"
+          >Оставляя заявку, вы соглашаетесь с условиями
+          <a href="#!" class="checkbox__link"
+            >политики конфиденциальности</a
+          ></span
+        >
+      </div>
+      <input type="submit" class="form__submit" value="Отправить" />
+    </form>
+  </div>
+</main>

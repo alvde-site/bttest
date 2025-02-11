@@ -2,7 +2,7 @@
   box-sizing: border-box;
   min-height: 230px;
   background-color: #adadad;
-  padding: 40px 200px 0;
+  padding: 40px 50px 0;
   position: relative;
 }
 
@@ -85,7 +85,7 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 65px;
   margin-left: 50px;
 }
 

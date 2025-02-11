@@ -15,7 +15,14 @@
 @import url(../blocks/footer/footer.css);
 /*footer конец */
 
+/* components ----------------------------------------------*/
+/* form */
+@import url(../blocks/form/form.css);
 /* logo */
 @import url(../blocks/logo/logo.css);
 /* breadcrumbs */
 @import url(../blocks/breadcrumbs/breadcrumbs.css);
+/* popup */
+@import url(../blocks/popup/popup.css);
+/* fade */
+@import url(../blocks/fade/fade.css);
