@@ -12,6 +12,8 @@
 
 .breadcrumbs li:last-child .breadcrumbs__item {
   color: #fdc70d;
+  pointer-events: none;
+  cursor: default;
 }
 
 @media (max-width: 1200px) {

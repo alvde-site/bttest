@@ -1,7 +1,7 @@
 <main class="main">
   <div class="page__block news">
     <ul class="news__breadcrumbs breadcrumbs">
-      <li><a href="#!" class="breadcrumbs__item">Главная</a></li>
+      <li><a href="/" class="breadcrumbs__item">Главная</a></li>
       <li><a href="#!" class="breadcrumbs__item">Новости</a></li>
     </ul>
     <div class="news__filter filter">
@@ -22,7 +22,14 @@
         <button class="filter__archive">Архив новостей</button>
       </div>
     </div>
-    <h2 class="news__title">Новости</h2>
+    <div class="news__title-container">
+      <h2 class="news__title">Новости</h2>
+      <ul class="news__categories">
+        <li><a href="/" class="news__category">Политика</a></li>
+        <li><a href="/" class="news__category">Экономика</a></li>
+        <li><a href="/" class="news__category">Развлечения</a></li>
+      </ul>
+    </div>
     <ul class="news__cards"></ul>
     <ul class="news__pagination pagination">
       <li>
@@ -38,13 +45,4 @@
       </li>
     </ul>
   </div>
-  <template id="newscard-template">
-    <li class="news__card newscard">
-      <div class="newscard__desc">
-        <p class="newscard__date"></p>
-        <p class="newscard__text"></p>
-      </div>
-      <img src="" alt="" class="newscard__image" />
-    </li>
-  </template>
 </main>

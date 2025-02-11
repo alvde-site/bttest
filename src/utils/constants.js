@@ -1,10 +1,12 @@
 export const openMenuButton = document.querySelector(".menu__button");
 export const closeMenuButton = document.querySelector(".nav__close-button");
 export const navMenu = document.querySelector(".menu__nav");
+export const fileInput = document.querySelector(".form__input-file + input");
+export const feedbackForm = document.querySelector(".feedback__form");
 
 // Данные карточек
 const newsImage = require("../images/news.png");
-export const newsCardsContainer = ".news__cards";
+export const newsCardsContainerSelector = ".news__cards";
 export const numberOfCards = 9;
 
 const newsCard = {
@@ -21,3 +23,11 @@ for (let i = 1; i <= numberOfCards; i++) {
 }
 
 newCardsData.reverse();
+
+// Данные для файлов
+
+export const fileInputContainerSelector = ".files";
+
+// Данные для попапа
+
+export const popupListItemSelector = ".popup__list";
